@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    text-align: center;
+    background-color: purple;
+    color: white;
+    position: relative;
+}
+
+/* .o{
+  display: flex;  
+}
+
+.firsto{
+    height: 2vw; 
+    width: 2vw; 
+    border: 0 solid black;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 1vw; 
+    animation: goforward 5s ease-out 1s 1 alternate forwards;
+}
+
+@keyframes goforward{
+    from{
+        top: 1vw;
+        left: 0;
+    }
+    to{
+        top: 1vw;
+        left: 53vw; 
+    }
+}
+
+.secondo{
+    height: 2vw;
+    width: 2vw; 
+    border: 0 solid black;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 1vw;
+    opacity: 0;
+    animation: after 1s ease-out 6s 1 alternate forwards;
+}
+
+@keyframes after{
+    from{
+        top: 1vw;
+        left: 53vw; 
+        opacity: 1;
+    }
+    to{
+        opacity: 1;
+        top: 3vw;
+        left: 53vw; 
+    }
+} */
+
+.boxy{
+    display: flex;
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    align-items: center;
+}
+
+.a,.b,.c,.d,.e,.f,.g,.h,.i{
+    height: 9vw; /* Use relative units */
+    width: 11vw; /* Use relative units */
+    border: 1px solid black;
+}
+
+.a,.d,.g{
+    border-top-color: white;
+}
+.a,.b,.c{
+    border-left-color: white;
+}
+
+.c,.f,.i{
+    border-bottom-color: white;
+}
+.g,.h,.i{
+    border-right-color: white;
+}
+
+.a:hover,
+.b:hover,
+.c:hover,
+.d:hover,
+.e:hover,
+.f:hover,
+.g:hover,
+.h:hover,
+.i:hover {
+    background-color: rgba(128, 0, 128, 0.528);
+}
+
+.box{
+    font-size: 9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+}
+
+.players{
+    color: rgb(0, 0, 0);
+    float: right;
+    position: relative;
+    font-size: medium;
+    top: 25vh; /* Use relative units */
+    right: 10vw; /* Use relative units */
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.p1,.p2{
+    font-size: medium;
+}
+
+.line{
+    height: 0.3vw; /* Use relative units */
+    width: 25vw; /* Use relative units */
+    background-color: purple;
+    position: relative;
+    left: 30vw; /* Use relative units */
+}
+
+.win{
+    color: white;
+    background-color: rgba(115, 0, 128, 0.775);
+    font-size:x-large; /* Use relative units */
+    float: right;
+    position: relative;
+    padding: 1vw;
+    right: 2vw;
+    border: 0 solid black;
+    border-radius: 3vh; /* Use relative units */
+    box-shadow: 2px 1px 5px 1px black;
+}
+
+.reset{
+    background-color: rgba(128, 0, 128, 0.843);
+    color: white;
+    padding: 1.2vw;
+    border: 0 solid black;
+    border-radius: 3vh; /* Use relative units */
+    font-size: large;
+    font-family: 'Times';
+    box-shadow: 2px 1px 5px 1px black;
+}
+
+.nightimage{
+    height: 20px;
+    width: 30px;
+    position: absolute;
+    top: 12vh;
+    right: 2vw;
+    background: none;
+}
+
+.nightmode{
+    height: 35px;
+    width: 60px;
+    top: 12vh;
+    right: 2vw;
+    position: absolute;
+    border: 2px solid rgba(0, 0, 0, 0.943);
+    border-radius: 25px;
+}
+
+.circle{
+    background-color: black;
+    height: 100%;
+    width: 50%;
+    border: 0 solid black;
+    border-radius: 50%;
+}
+
+.dark-mode{
+    background-color: black;
+    .circle{
+        background-color: white;
+        translate: 30px;
+    }
+    .nightmode{
+        border-color: white;
+    }
+    .players{
+        color: white;
+    }
+    .win{
+        box-shadow: 2px 1px 5px 1px white;
+    }
+    .reset{
+        box-shadow: 0 2px 5px  white;
+    }
+    .a,.b,.c,.d,.e,.f,.g,.h,.i{
+        border-color: white;
+    }
+    .a,.d,.g{
+        border-top-color: black;
+    }
+    .a,.b,.c{
+        border-left-color: black;
+    }
+    
+    .c,.f,.i{
+        border-bottom-color: black;
+    }
+    .g,.h,.i{
+        border-right-color: black;
+    }
+    .box{
+        color: white;
+    }
+}
+
+@media (max-width: 1000px) {
+    .a, .b, .c, .d, .e, .f, .g, .h, .i {
+        height: 16vh;
+        width: 20vh;
+    }
+} 
+
+@media (max-width: 766px) {
+    .a, .b, .c, .d, .e, .f, .g, .h, .i {
+        height: 16vh;
+        width: 20vh;
+    }
+    .players {
+        top: 62vh;
+        right: 45vw;
+    }
+} 
+
+@media (max-width: 535px) {
+    .a, .b, .c, .d, .e, .f, .g, .h, .i {
+        height: 17vh;
+        width: 18vh;
+    }
+    .boxy{
+        left: 20vw;
+    }
+} 
+
+@media (max-width: 395px) {
+    .a, .b, .c, .d, .e, .f, .g, .h, .i {
+        height: 15vh;
+        width: 25vw;
+    }
+    .boxy{
+        left: 20vw;
+    }
+} 
+
