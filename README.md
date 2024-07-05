@@ -28,7 +28,7 @@ tic-tac-toe/
 
 ├── style.css          # CSS file for styling
 
-└── script.js          # JavaScript file for game logic
+|── script.js          # JavaScript file for game logic
 
 
 ## How to Play
