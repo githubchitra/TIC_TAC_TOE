@@ -24,8 +24,10 @@ plaintext
 tic-tac-toe/
 │
 ├── index.html        # Main HTML file
+
 ├── style.css         # CSS file for styling
-└── main.js           # JavaScript file for game logic
+
+└── script.js           # JavaScript file for game logic
 
 
 ## How to Play
