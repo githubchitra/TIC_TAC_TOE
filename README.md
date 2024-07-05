@@ -23,11 +23,11 @@ This project is a fully responsive Tic-Tac-Toe game built using HTML, CSS, and J
 plaintext
 tic-tac-toe/
 
-│
+
 ├── index.html         # Main HTML file
-|
+
 ├── style.css          # CSS file for styling
-|
+
 └── script.js          # JavaScript file for game logic
 
 
